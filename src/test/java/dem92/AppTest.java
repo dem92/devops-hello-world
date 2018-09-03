@@ -17,10 +17,4 @@ public class AppTest
     {
         assertTrue( App.helloGenerator().equals("Hello world!") );
     }
-
-    @Test
-    public void shouldFail()
-    {
-        assertTrue( App.helloGenerator().equals("Bye!") );
-    }
 }
