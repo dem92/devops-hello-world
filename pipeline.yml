@@ -12,4 +12,4 @@ jobs:
     - get: git-repo
       trigger: true
     - task: build-and-verify
-      file: git-repo/ci/mvn-build.yml
+      file: ci/mvn-build.yml
