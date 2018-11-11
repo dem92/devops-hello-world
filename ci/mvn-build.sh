@@ -1,0 +1,1 @@
+mvn -f git-repo/pom.xml test

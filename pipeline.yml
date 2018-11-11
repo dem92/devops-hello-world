@@ -1,0 +1,15 @@
+
+resources:
+- name: git-repo
+  type: git
+  source:
+    uri: https://github.com/dem92/devops-hello-world
+    branch: master
+
+jobs:
+- name: job-build-and-verify
+  plan:
+    - get: git-repo
+      trigger: true
+    - task: build-and-verify
+      file: devops-hello-world/ci/mvn-build.yml
